@@ -6,29 +6,33 @@
     <meta name="keywords" content="pastelería, testimonios, dulces, repostería">
     <meta name="author" content="Cisneros Kenny">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonios - Pastelería Dulce Sabor</title>
+    <title>Pasteleria CupCake - Contacto</title>
 </head>
 <body>
     <header>
-        <h1>Pastelería CupCake</h1>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="about.html">Nosotros</a> |
-            <a href="testimonios.html">Productos</a> |
-            <a href="galeria.html">Eventos</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div>
+            <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Productos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
     </header>
+
+    <hr>
 
     <main>
         <section id="testimonios">
             <h2>Testimonios de Clientes</h2>
             <table align="center">
                 <tr>
-                    <td><img src="imagenes/imagen 1.jpeg" alt="Foto de Cliente 1" width="450" height="450"></td>
-                    <td><img src="imagenes/imagen 2.jpeg" alt="Foto de Cliente 2" width="450" height="450"></td>
-                    <td><img src="imagenes/imagen 3.jpeg" alt="Foto de Cliente 3" width="450" height="450"></td>
-                    <td><img src="imagenes/imagen 4.jpeg" alt="Foto de Cliente 4" width="450" height="450"></td>
+                    <td><img src="img/imagen 1.jpeg" alt="Foto de Cliente 1" width="350" height="350"></td>
+                    <td><img src="img/imagen 2.jpeg" alt="Foto de Cliente 2" width="350" height="350"></td>
+                    <td><img src="img/imagen 3.jpeg" alt="Foto de Cliente 3" width="350" height="350"></td>
+                    <td><img src="img/imagen 4.jpeg" alt="Foto de Cliente 4" width="350" height="350"></td>
                 </tr>
                 <tr>
                     <td>Martha Julia</td>
@@ -50,19 +54,24 @@
                 </tr>
             </table><br><br>
         </section>
+
         <section id="enviar_testimonio", align="center">
-            <h3 >Enviar tu Testimonio</h3>
             <form action="submit_testimonio.html" method="post">
-                <label for="nombre">Nombre:</label><br><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                <label for="email">Correo electrónico:</label><br><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="testimonio">Testimonio:</label><br><br>
-                <textarea id="testimonio" name="testimonio" rows="4" cols="50" required></textarea><br><br>
-                <button type="submit">Enviar</button><br>
+                <fieldset>
+                    <h3 >Enviar tu Testimonio</h3>
+                    <label for="nombre">Nombre:</label><br><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label><br><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="testimonio">Testimonio:</label><br><br>
+                    <textarea id="testimonio" name="testimonio" rows="4" cols="50" required></textarea><br><br>
+                    <button type="submit">Enviar</button><br>
+                </fieldset>
             </form>
         </section>
-        <br>
+
+        <hr>
+
         <section id="faqs">
             <h2>Preguntas Frecuentes (FAQs)</h2>
             <article>
@@ -93,16 +102,29 @@
     </main>
 
     <footer>
-        <address><br>
-            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-            <p>Teléfono: +123 456 7890</p>
-            <p>Email: <a href="mailto:contacto@pasteleriadulcesabor.com">contacto@pasteleriadulcesabor.com</a></p>
-        </address>
-        <span>Redes Sociales</span>
-        <p>
-            <a href="https://www.facebook.com/tu_pagina">Facebook</a> |
-            <a href="https://www.twitter.com/tu_pagina">Twitter</a>
-        </p>
+        <div>
+            <h3>Siguenos en nuestras redes</h3>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
+            </a>
+            
+            <a href="https://x.com/home" target="_blank">
+                <img src="img/x.png" alt="x" width="40px" height="40px">
+            </a>
+            
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
+            </a>
+        </div>
+        <div>
+            <h3>Información de contacto</h3>
+            <address>
+                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                <p>Teléfono: +123 456 7890</p>
+                <p>Email: <a href="mailto:contacto@pasteleriadulcesabor.com">contacto@pasteleriacupcake.com</a></p>
+            </address>
+        </div>
+        
     </footer>
 </body>
 </html>

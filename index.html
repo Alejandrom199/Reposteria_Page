@@ -7,90 +7,273 @@
         <meta name="author" content="Saul Maldonado López">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pastelería CupCake - Inicio</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .contenedor-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(255, 230, 234);
+                padding: 10px;
+                box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
+                margin-bottom: 20px;
+            }
+
+            .btn-enlace{
+                background-color: rgb(255, 121, 118);
+                padding: 10px;
+                border-radius: 10px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .btn-enlace:hover {
+                background-color: rgb(222, 94, 92);
+            }
+
+            .img-principal {
+                background-image: url('./img/pasteleria.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                width: auto;
+                height: 490px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-bottom: 30px;
+            }
+            .contenedor-titulos{
+                display: inline-block;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .titulo-principal{
+                color: rgb(255, 133, 129);
+                font-size: 65px;
+                text-shadow: 1px 1px 1px rgb(255, 255, 255);
+            }
+
+            .titulo-secundario{
+                color: white;
+                font-size: 30px;
+                text-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+            }
+
+            .contenedor-section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contenedor-novedades{
+                display: flex;
+                justify-content: center;
+            }
+
+            .titulo-novedades{
+                color: rgba(190, 4, 4, 1);
+                font-size: 45px;
+                margin-bottom: 20px;
+                border-bottom: 5px solid rgba(190, 4, 4, 1);
+            }
+
+            section > section{
+                width: 1150px;
+                box-shadow: 3px 3px 3px rgba(190, 4, 4, 0.4);
+                border-radius: 10px;
+                margin: 10px;
+                padding: 20px;
+                background-color: rgb(255, 238, 238);
+            }
+
+            section > h3{
+                color: rgb(255, 121, 118);
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            div > ol{
+                font-size: 30px;
+            }
+
+            h4{
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            .contenedor-novedades-int{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .contenedor-recetas{
+                width: 300px;
+                margin-right: 20px;
+                background-color: white;
+                padding: 20px;
+                margin: 10px 0;
+                border-radius: 10px;  
+            }
+
+            .contenedor-clientes{
+                width:200px;
+                margin-right: 20px;
+                background-color: white;
+                padding: 20px;
+                margin: 10px 0;
+                border-radius: 10px;   
+            }
+            footer{
+                background-color: black;
+                display: flex;
+                justify-content: space-between;
+                padding: 40px;
+            }
+            .contenedor-enlaces{
+                display: flex;
+                justify-content: space-around;
+                margin: 10px;
+            }
+            .txt-footer{
+                color: white;
+            }
+            address > p {
+                color: white;
+            }
+            
+            .br-20{
+                border-radius: 20px;
+                margin: 10px;
+            }
+        </style>
     </head>
 
     <body>
         <!--Header-->
         <header>
-            <div>
+            <div class="contenedor-header">
                 <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
                 <nav>
-                    <a href="">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="eventos.html">Eventos</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a class="btn-enlace" href="">Inicio</a>
+                    <a class="btn-enlace" href="nosotros.html">Nosotros</a>
+                    <a class="btn-enlace" href="productos.html">Productos</a>
+                    <a class="btn-enlace" href="eventos.html">Eventos</a>
+                    <a class="btn-enlace" href="contacto.html">Contacto</a>
                 </nav>
             </div>
         </header>
 
-        <hr>
         <!--Main-->
         <main>
             <div>
-                <h1>Pastelería CupCake</h1>
-                <img src="img/pasteleria.png" alt="pasteleria-image" width="800px" height="400px">
-                <h2>Descubre la Magia de la Repostería</h2>
-                <h3>Recetas, Consejos y Mucho Más</h3>
+                <div class="img-principal">
+                    <div class="contenedor-titulos">
+                        <h1 class="titulo-principal">Pastelería CupCake</h1>
+                        <h2 class="titulo-secundario">Descubre la Magia de la Repostería</h2>
+                    </div>
+                </div>
             </div>
 
-            <hr>
+            <div class="contenedor-section">
+                <section>
+                    <div class="contenedor-novedades">
+                        <h2 class="titulo-novedades">Novedades</h2>
+                    </div>
+                    <section>
+                        <h3>Ultimas recetas Agregadas</h3>
+                        <div class="contenedor-novedades-int">
+                            <div class="contenedor-recetas">
+                                <h4>Receta #1</h4>
+                                <img class="br-20" src="img/dulce.jpg" alt="postre" width="150px" height="150px">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa. Doloremque excepturi ducimus ad repudiandae nostrum blanditiis aspernatur ratione minima voluptatem nihil! Minus eum rerum, dicta delectus ad ipsam esse.</p>
+                            </div>
 
-            <section>
-                <h2>Novedades</h2>
-                <section>
-                    <h3>Ultimas recetas</h3>
-                    <div>
-                        <h4>Receta #1</h4>
-                        <img src="img/dulce.jpg" alt="postre" width="150px" height="150px">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsa. Doloremque excepturi ducimus ad repudiandae nostrum blanditiis aspernatur ratione minima voluptatem nihil! Minus eum rerum, dicta delectus ad ipsam esse.</p>
-                    </div>
+                            <div class="contenedor-recetas"> 
+                                <h4>Receta #2</h4>
+                                <img class="br-20" src="img/dulce.jpg" alt="postre" width="150px" height="150px">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis architecto libero natus enim ea velit ipsum ullam incidunt repudiandae totam distinctio suscipit, esse ratione! Vitae magni eum deserunt officia voluptatum</p>
+                            </div>
+
+                            <div class="contenedor-recetas">
+                                <h4>Receta #3</h4>
+                                <img class="br-20" src="img/dulce.jpg" alt="postre" width="150px" height="150px">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In reiciendis laborum nam voluptate aut quas a fugit exercitationem quasi facilis quis ullam sit perferendis, repellendus aliquid earum suscipit omnis velit.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    
+                    <section>
+                        <h3>Lista de Recetas populares</h3>
+                        <div>
+                            <ol>
+                                <li>Receta popular #1</li>
+                                <li>Receta popular #2</li>
+                                <li>Receta popular #3</li>
+                                <li>Receta popular #4</li>
+                            </ol>
+                        </div>
+                    </section>
+                    <br>
+            
+                    <section>
+                        <h3>Contenedor de Testimonios</h3>
+                        <div class="contenedor-novedades-int">
+                            <div class="contenedor-clientes">
+                                <h4>Cliente #1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur maiores quasi totam repellat minima corporis voluptatum! Quasi nisi, exercitationem neque molestias quas debitis, vitae provident possimus, quia impedit eligendi fuga?</p>
+                            </div>
+
+                            <div class="contenedor-clientes">
+                                <h4>Cliente #2</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, at reiciendis! Corporis numquam architecto velit tempore, quam repudiandae dolores cumque molestiae porro magnam ea et adipisci, error consectetur beatae nam.</p>
+                            </div>
+
+                            <div class="contenedor-clientes">
+                                <h4>Cliente #3</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere debitis facilis magnam laborum mollitia eaque necessitatibus voluptate eius eum alias atque dignissimos dolorum, iusto ipsum iste eveniet exercitationem rerum placeat.</p>
+                            </div>
+
+                            <div class="contenedor-clientes">
+                                <h4>Cliente #4</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis voluptate ipsam necessitatibus dolores dicta. Veniam, totam. Repudiandae in ipsum dolorem magni assumenda! Blanditiis veritatis eius dolorum natus, quo ab!</p>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br>
-                
-                <section>
-                    <h3>Recetas populares</h3>
-                    <div>
-                        <ol>
-                            <li>Receta popular #1</li>
-                            <li>Receta popular #2</li>
-                            <li>Receta popular #3</li>
-                            <li>Receta popular #4</li>
-                        </ol>
-                    </div>
-                </section>
-                <br>
-        
-                <section>
-                    <h3>Testimonios</h3>
-                    <div>
-                        <h4>Cliente #1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur maiores quasi totam repellat minima corporis voluptatum! Quasi nisi, exercitationem neque molestias quas debitis, vitae provident possimus, quia impedit eligendi fuga?</p>
-                    </div>
-                </section>
-            </section>
+            </div>
 
         </main>
-
-        <hr>
+        <br>
         <!--Footer-->
         <footer>
             <div>
-                <h3>Siguenos en nuestras redes</h3>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
-                </a>
-
-                <a href="https://x.com/home" target="_blank">
-                    <img src="img/x.png" alt="x" width="40px" height="40px">
-                </a>
-
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
-                </a>
+                <h3 class="txt-footer">Siguenos en nuestras redes</h3>
+                
+                <div class="contenedor-enlaces">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
+                    </a>
+    
+                    <a href="https://x.com/home" target="_blank">
+                        <img src="img/x.png" alt="x" width="40px" height="40px">
+                    </a>
+    
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
+                    </a>
+                </div>
             </div>
             <div>
-                <h3>Información de contacto</h3>
+                <h3 class="txt-footer">Información de contacto</h3>
                 <address>
                     <p>Dirección: Calle Falsa 123, Ciudad, País</p>
                     <p>Teléfono: +123 456 7890</p>

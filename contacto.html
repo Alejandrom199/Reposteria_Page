@@ -7,20 +7,85 @@
     <meta name="author" content="Cisneros Kenny">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería CupCake - Contacto</title>
+    <style>
+        /* Selector universal para cambiar el color de la fuente y ponerla en itálicas */
+        * {
+            color: #1e1d1d; 
+            font-style: italic;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            padding: 10px;
+            border: 2px solid #333333;
+        }
+
+        /* Selector de clase para estilizar tres elementos */
+        .estilo-especial {
+            color: #ff69b4;
+            font-size: 1.2em;
+        }
+
+        /* Selector por id para centrar texto y subrayarlo */
+        #testimonios {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        /* Selector en línea para texto en negritas y capitalizado */
+        .inline-element {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        /* Selector combinador */
+        #faqs h2 {
+            color: #ff4500;
+        }
+
+        img[src="img/cupcake.png"] {
+            width: 150px;
+            height: 150px; 
+            border-radius: 50%;
+            border: 2px solid #333333;
+        }
+        
+        img[src^="img/imagen"] {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 2px solid #333333;
+            margin: 0 10px;
+        }
+
+        img[src^="img/facebook"], img[src^="img/x"], img[src^="img/Instagram"] {
+            width: 20px;
+            height: 20px; 
+            border-radius: 50%;
+            border: 1px solid #333333;
+        }
+
+        /* Estilo para el fondo celeste del formulario de enviar testimonio */
+        #enviar_testimonio form {
+            background-color: #b3e5fc;
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+    </style>
 </head>
 <body>
     <!--Header-->
     <header>
         <div>
-            <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
+            <img src="img/cupcake.png" alt="cupcake-image"><br><br>
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="productos.html">Productos</a>
-                <a href="eventos.html">Eventos</a>
-                <a href="">Contacto</a>
+                <a href="index.html" class="estilo-especial">Inicio</a>
+                <a href="nosotros.html" class="estilo-especial">Nosotros</a>
+                <a href="productos.html" class="estilo-especial">Productos</a>
+                <a href="eventos.html" class="estilo-especial">Eventos</a>
+                <a href="contacto.html" class="estilo-especial">Contacto</a>
             </nav>
-        </div>
+        </div><br>
     </header>
 
     <hr>
@@ -30,16 +95,16 @@
             <h2>Testimonios de Clientes</h2>
             <table align="center">
                 <tr>
-                    <td><img src="img/imagen 1.jpeg" alt="Foto de Cliente 1" width="300px" height="300px"></td>
-                    <td><img src="img/imagen 2.jpeg" alt="Foto de Cliente 2" width="300px" height="300px"></td>
-                    <td><img src="img/imagen 3.jpeg" alt="Foto de Cliente 3" width="300px" height="300px"></td>
-                    <td><img src="img/imagen 4.jpeg" alt="Foto de Cliente 4" width="300px" height="300px"></td>
+                    <td><img src="img/imagen 1.jpeg" alt="Foto de Cliente 1"></td>
+                    <td><img src="img/imagen 2.jpeg" alt="Foto de Cliente 2"></td>
+                    <td><img src="img/imagen 3.jpeg" alt="Foto de Cliente 3"></td>
+                    <td><img src="img/imagen 4.jpeg" alt="Foto de Cliente 4"></td>
                 </tr>
                 <tr>
-                    <td>Martha Julia</td>
-                    <td>Pepe Jose</td>
-                    <td>Jose Alberto</td>
-                    <td>Mario Antonio</td>
+                    <td class="inline-element">Martha Julia</td>
+                    <td class="inline-element">Pepe Jose</td>
+                    <td class="inline-element">Jose Alberto</td>
+                    <td class="inline-element">Mario Antonio</td>
                 </tr>
                 <tr>
                     <td>⭐⭐⭐⭐⭐</td>
@@ -56,10 +121,10 @@
             </table><br><br>
         </section>
 
-        <section id="enviar_testimonio", align="center">
+        <section id="enviar_testimonio" align="center">
             <form action="submit_testimonio.html" method="post">
                 <fieldset>
-                    <h3 >Enviar tu Testimonio</h3>
+                    <h3>Enviar tu Testimonio</h3>
                     <label for="nombre">Nombre:</label><br><br>
                     <input type="text" id="nombre" name="nombre" required><br><br>
                     <label for="email">Correo electrónico:</label><br><br>
@@ -70,7 +135,6 @@
                 </fieldset>
             </form>
         </section>
-
         <hr>
 
         <section id="faqs">
@@ -122,9 +186,9 @@
         <div>
             <h3>Información de contacto</h3>
             <address>
-                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                <p>Dirección: Calle Falsa 123, Guayaquil, Ecuador</p>
                 <p>Teléfono: +123 456 7890</p>
-                <p>Email: <a href="mailto:contacto@pasteleriadulcesabor.com">contacto@pasteleriacupcake.com</a></p>
+                <p>Email: <a href="mailto:contacto@pasteleriacupcake.com">contacto@pasteleriacupcake.com</a></p>
             </address>
         </div>
         

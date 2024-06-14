@@ -33,6 +33,76 @@
             .btn-enlace:hover {
                 background-color: rgb(222, 94, 92);
             }
+            main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title styles */
+.main-title {
+    text-align: center;
+    color: #cb648b;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Event section styles */
+.event {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.event:last-of-type {
+    border-bottom: none;
+}
+
+.event-title {
+    color: #fc5555;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.event-images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.event-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-img-large {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.event-description {
+    line-height: 1.8;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Horizontal rule styles */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
 
             footer{
                 background-color: black;
@@ -70,24 +140,28 @@
         </header>
 
         <main>
-            <section>
-                <h2>Listado de eventos</h2>
-                <section>
-                    <h3>Dia de la madre</h3>
-                    <img src="img/Dia-de-la-madre.webp" alt="Dia de la madre" width="300px" height="300px">
+            <section class="event-list">
+                <h2 class="main-title">Listado de eventos</h2>
+                <section class="event">
+                    <h3 class="event-title">Dia de la madre</h3>
+                    <div class="event-images">
+                        <img src="img/Dia-de-la-madre.webp" alt="Dia de la madre" class="event-img">
+                        <img src="img/hq720.jpg" alt="Dia de la madre" class="event-img-large">
+                    </div>
                     <p><strong>Fecha y hora: </strong>10 de Mayo, 10:00 Am</p>
                     <p><strong>Ubicacion: </strong>Pasteleria CupCake</p>
-                    <p>Ven a disfrutar del Dia de la madre con nuestras deliciosas tortas y pasteles especiales</p>
-                    <img src="img/hq720.jpg" alt="Dia de la madre" width="400px" height="300px">       
+                    <p class="event-description">Ven a disfrutar del Dia de la madre con nuestras deliciosas tortas y pasteles especiales</p>
                 </section>
                 <hr>
-                <section>
-                    <h4>Dia del Padre</h4>
-                    <img src="img/por_que_se_celebra_el_dia_del_padre_51964_orig.jpg" alt="Dia del Padre" width="300px" height="300px">
+                <section class="event">
+                    <h4 class="event-title">Dia del Padre</h4>
+                    <div class="event-images">
+                        <img src="img/por_que_se_celebra_el_dia_del_padre_51964_orig.jpg" alt="Dia del Padre" class="event-img">
+                        <img src="img/tortapapa.jpg" alt="Dia del Padre" class="event-img-large">
+                    </div>
                     <p><strong>Fecha y hora: </strong>17 de Junio, 10:00 Am</p>
                     <p><strong>Ubicacion: </strong>Pasteleria CupCake</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea ipsum, id eveniet voluptatibus corporis laborum, consequuntur harum accusantium numquam, quia voluptatem debitis optio beatae nulla accusamus rem. Ipsum, nihil?</p>
-                    <img src="img/tortapapa.jpg" alt="Dia de la madre" width="400px" height="300px">
+                    <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea ipsum, id eveniet voluptatibus corporis laborum, consequuntur harum accusantium numquam, quia voluptatem debitis optio beatae nulla accusamus rem. Ipsum, nihil?</p>
                 </section>
             </section>
         </main>

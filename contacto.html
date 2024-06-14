@@ -8,16 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería CupCake - Contacto</title>
     <style>
-        /* Selector universal para cambiar el color de la fuente y ponerla en itálicas */
-        * {
-            color: #1e1d1d; 
-            font-style: italic;
+        
+        *{
+            margin: 0;
+        }
+        .contenedor-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 230, 234);
+            padding: 10px;
+            box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
+            margin-bottom: 20px;
         }
 
-        /* Estilo para los enlaces */
-        a {
+        .btn-enlace{
+            background-color: rgb(255, 121, 118);
             padding: 10px;
-            border: 2px solid #333333;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-enlace:hover {
+            background-color: rgb(222, 94, 92);
         }
 
         /* Selector de clase para estilizar tres elementos */
@@ -43,26 +58,10 @@
             color: #ff4500;
         }
 
-        img[src="img/cupcake.png"] {
-            width: 150px;
-            height: 150px; 
-            border-radius: 50%;
-            border: 2px solid #333333;
-        }
-        
-        img[src^="img/imagen"] {
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            border: 2px solid #333333;
-            margin: 0 10px;
-        }
-
-        img[src^="img/facebook"], img[src^="img/x"], img[src^="img/Instagram"] {
-            width: 20px;
-            height: 20px; 
-            border-radius: 50%;
-            border: 1px solid #333333;
+        .tamanio-img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
         }
 
         /* Estilo para el fondo celeste del formulario de enviar testimonio */
@@ -73,51 +72,50 @@
         }
 
         footer{
-                background-color: black;
-                display: flex;
-                justify-content: space-between;
-                padding: 40px;
-            }
-            .contenedor-enlaces{
-                display: flex;
-                justify-content: space-around;
-                margin: 10px;
-            }
-            .txt-footer{
-                color: white;
-            }
-            address > p {
-                color: white;
-            }
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+        .contenedor-enlaces{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        .txt-footer{
+            color: white;
+        }
+        address > p {
+            color: white;
+        }
 
     </style>
 </head>
 <body>
     <!--Header-->
     <header>
-        <div>
-            <img src="img/cupcake.png" alt="cupcake-image"><br><br>
+        <div class="contenedor-header">
+            <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
             <nav>
-                <a href="index.html" class="estilo-especial">Inicio</a>
-                <a href="nosotros.html" class="estilo-especial">Nosotros</a>
-                <a href="productos.html" class="estilo-especial">Productos</a>
-                <a href="eventos.html" class="estilo-especial">Eventos</a>
-                <a href="contacto.html" class="estilo-especial">Contacto</a>
+                <a class="btn-enlace" href="index.html">Inicio</a>
+                <a class="btn-enlace" href="nosotros.html">Nosotros</a>
+                <a class="btn-enlace" href="productos.html">Productos</a>
+                <a class="btn-enlace" href="eventos.html">Eventos</a>
+                <a class="btn-enlace" href="">Contacto</a>
             </nav>
-        </div><br>
+        </div>
     </header>
 
-    <hr>
     <!--Main-->
     <main>
         <section id="testimonios">
             <h2>Testimonios de Clientes</h2>
             <table align="center">
                 <tr>
-                    <td><img src="img/imagen 1.jpeg" alt="Foto de Cliente 1"></td>
-                    <td><img src="img/imagen 2.jpeg" alt="Foto de Cliente 2"></td>
-                    <td><img src="img/imagen 3.jpeg" alt="Foto de Cliente 3"></td>
-                    <td><img src="img/imagen 4.jpeg" alt="Foto de Cliente 4"></td>
+                    <td><img class="tamanio-img" src="img/imagen 1.jpeg" alt="Foto de Cliente 1"></td>
+                    <td><img class="tamanio-img" src="img/imagen 2.jpeg" alt="Foto de Cliente 2"></td>
+                    <td><img class="tamanio-img" src="img/imagen 3.jpeg" alt="Foto de Cliente 3"></td>
+                    <td><img class="tamanio-img" src="img/imagen 4.jpeg" alt="Foto de Cliente 4"></td>
                 </tr>
                 <tr>
                     <td class="inline-element">Martha Julia</td>
@@ -185,32 +183,35 @@
         </section>
     </main>
 
-    <hr>
-    <!--Footer-->
-    <footer>
-        <div>
-            <h3>Siguenos en nuestras redes</h3>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
-            </a>
+    <br>
+        <!--Footer-->
+        <footer>
+            <div>
+                <h3 class="txt-footer">Siguenos en nuestras redes</h3>
+                
+                <div class="contenedor-enlaces">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
+                    </a>
+    
+                    <a href="https://x.com/home" target="_blank">
+                        <img src="img/x.png" alt="x" width="40px" height="40px">
+                    </a>
+    
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="txt-footer">Información de contacto</h3>
+                <address>
+                    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                    <p>Teléfono: +123 456 7890</p>
+                    <p>Email: <a href="mailto:contacto@pasteleriadulcesabor.com">contacto@pasteleriacupcake.com</a></p>
+                </address>
+            </div>
             
-            <a href="https://x.com/home" target="_blank">
-                <img src="img/x.png" alt="x" width="40px" height="40px">
-            </a>
-            
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
-            </a>
-        </div>
-        <div>
-            <h3>Información de contacto</h3>
-            <address>
-                <p>Dirección: Calle Falsa 123, Guayaquil, Ecuador</p>
-                <p>Teléfono: +123 456 7890</p>
-                <p>Email: <a href="mailto:contacto@pasteleriacupcake.com">contacto@pasteleriacupcake.com</a></p>
-            </address>
-        </div>
-        
-    </footer>
+        </footer>
 </body>
 </html>

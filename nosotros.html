@@ -8,6 +8,32 @@
         <meta author = "Kenneth Fernando Armijos Moreira">
         <title>Pastelería CupCake - Nosotros</title>
         <style>
+            *{
+                margin: 0;
+            }
+            .contenedor-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(255, 230, 234);
+                padding: 10px;
+                box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
+                margin-bottom: 20px;
+            }
+
+            .btn-enlace{
+                background-color: rgb(255, 121, 118);
+                padding: 10px;
+                border-radius: 10px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .btn-enlace:hover {
+                background-color: rgb(222, 94, 92);
+            }
+
             footer{
                 background-color: black;
                 display: flex;
@@ -31,19 +57,17 @@
     <body>
         <!--Header-->
         <header>
-            <div>
+            <div class="contenedor-header">
                 <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
                 <nav>
-                    <a href="index.html">Inicio</a>
-                    <a href="">Nosotros</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="eventos.html">Eventos</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a class="btn-enlace" href="index.html">Inicio</a>
+                    <a class="btn-enlace" href="">Nosotros</a>
+                    <a class="btn-enlace" href="productos.html">Productos</a>
+                    <a class="btn-enlace" href="eventos.html">Eventos</a>
+                    <a class="btn-enlace" href="contacto.html">Contacto</a>
                 </nav>
             </div>
         </header>
-
-        <hr>
 
         <main>
 
@@ -104,23 +128,28 @@
         <hr>
 
         <!--Footer-->
+        <br>
+        <!--Footer-->
         <footer>
             <div>
-                <h3>Siguenos en nuestras redes</h3>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
-                </a>
-
-                <a href="https://x.com/home" target="_blank">
-                    <img src="img/x.png" alt="x" width="40px" height="40px">
-                </a>
-
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
-                </a>
+                <h3 class="txt-footer">Siguenos en nuestras redes</h3>
+                
+                <div class="contenedor-enlaces">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/facebook.webp" alt="facebook" width="40px" height="40px">
+                    </a>
+    
+                    <a href="https://x.com/home" target="_blank">
+                        <img src="img/x.png" alt="x" width="40px" height="40px">
+                    </a>
+    
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/Instagram.png" alt="instagram" width="40px" height="40px">
+                    </a>
+                </div>
             </div>
             <div>
-                <h3>Información de contacto</h3>
+                <h3 class="txt-footer">Información de contacto</h3>
                 <address>
                     <p>Dirección: Calle Falsa 123, Ciudad, País</p>
                     <p>Teléfono: +123 456 7890</p>

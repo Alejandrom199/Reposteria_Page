@@ -21,6 +21,17 @@
                 margin-bottom: 20px;
             }
 
+            .contenedor-div{
+                
+                padding: 1em;
+                background-color: white;
+                margin: 1em auto;
+                max-width: 685px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+                
+            }
+
             .btn-enlace{
                 background-color: rgb(255, 121, 118);
                 padding: 10px;
@@ -32,6 +43,28 @@
 
             .btn-enlace:hover {
                 background-color: rgb(222, 94, 92);
+            }
+
+
+            .btn-productos{
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                border-radius: 10px;
+                color: rgb(10, 10, 10);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .btn-productos:hover {
+                background-color: rgb(243, 197, 193);
+                transform: scale(1.1);
+
+            }
+            
+            .texto{
+                text-align: center;
+                margin-top: 5%;
+                margin-bottom: 5%;
             }
 
             footer{
@@ -70,24 +103,26 @@
         </header>
 
         <main>
-            <div>
+            <div class="contenedor-div">
+                <h1 class="texto" style="color: indianred;">Nuestros deliciosos productos</h1>
+                <p class="texto"> Ofrecemos tortas con variedad de gustos, brazos gitanos, esponjosos, merengue, aceite y fermentado</p>
                 <table border="1">
                     <tr>
-                        <th>
+                        <th class="btn-productos">
                             <figure>    
                                 <img src="https://california.ec/wp-content/uploads/2022/08/gitano-chocolate.jpg" width="200px" height="200px"> 
                                 <figcaption>Brazo gitano chocolate $11</figcaption>
                             </figure>
                         </th>
         
-                        <th> 
+                        <th class="btn-productos"> 
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/gitano-manjar.jpg" width="200px" height="200px">
                                 <figcaption>Brazo gitano manjar $10</figcaption>
                             </figure>
                         </th>
         
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/capuccino.jpg" width="200px" height="200px">
                                 <figcaption>Torta Capuccino $25</figcaption>
@@ -96,21 +131,21 @@
                     </tr>
 
                     <tr>
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/caramelo.jpg" width="200px" height="200px">
                                 <figcaption>Torta caramelo $18</figcaption>
                             </figure>   
                         </th>
 
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/chantilli.jpg" width="200px" height="200px">
                                 <figcaption>Torta Chantilla $25</figcaption>
                             </figure>
                         </th>
 
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/chocolate-2.jpg" width="200px" height="200px">
                                 <figcaption>Torta de chocolate $29</figcaption>
@@ -119,21 +154,21 @@
                     </tr>
 
                     <tr>
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2023/06/festival.jpg" width="200px" height="200px">
                                 <figcaption>Torta Festival 36$</figcaption>
                             </figure>
                         </th>
         
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/inglesa.jpg" width="200px" height="200px">
                                 <figcaption>Torta Inglesa 20$</figcaption>
                             </figure>
                         </th>
         
-                        <th>
+                        <th class="btn-productos">
                             <figure>
                                 <img src="https://california.ec/wp-content/uploads/2022/08/Panaderia-California-Torta-Marmoleada-300x300.jpg" width="200px" height="200px">
                                 <figcaption>Torta Marmoleada 27$</figcaption>

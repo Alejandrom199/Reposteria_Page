@@ -1,4 +1,6 @@
 *{
+    color: #379689;
+    font-style: italic;
     margin: 0;
 }
 .contenedor-header{
@@ -25,7 +27,7 @@
 }
 
 .img-principal {
-    background-image: url('./img/pasteleria.png');
+    background-image: url('/img/pasteleria.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

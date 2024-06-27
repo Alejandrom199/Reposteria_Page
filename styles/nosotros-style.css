@@ -1,8 +1,9 @@
 *{
     color: #379689;
     font-style: italic;
-    margin: 2;
+    margin: 0;
 }
+/*Header*/
 .contenedor-header{
     display: flex;
     justify-content: space-between;
@@ -20,74 +21,113 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .btn-enlace:hover {
     background-color: rgb(222, 94, 92);
 }
+/*Body*/
+.main-sobre-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    margin:  40px 0;
+}
+
+.titulo-sobre-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 2em;
+}
+
+h2 {
+    color: #ff6347;
+    font-size:1.5em;
+    margin: 10px 0;
+}
+
+hr {
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+main img{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.main-all-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contenedor-section-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-img{
+    background-image: url(/img/Pasteleros1.jpeg);
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+.video-yt{
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+/*Footer*/
 footer{
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
+
 .contenedor-enlaces{
     display: flex;
     justify-content: space-around;
     margin: 10px;
 }
+
 .txt-footer{
     color: white;
 }
+
 address > p {
     color: white;
 }
-a {
-    padding: 5px;
-    border: 1px solid #ccc;
-    text-decoration: none;
-    color: #131313;
-    transition: background-color 0.3s ease;
-}
-.ClaseTitu {
-    color: #ff6347;
-    font-size: 2em;
-}
-#elemento-centrado {
-    text-align: center;
-    text-decoration: underline;
-}
-.Subt {
-    font-weight: bold;
-    color: #000000;
-    text-transform: capitalize;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-main {
-    padding: 1em;
-    background-color: white;
-    margin: 1em auto;
-    max-width: 1200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-section {
-    margin: 2em 0;
-}
-main img{
-    margin: auto;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-footer a img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0 0.5em;
+
+.br-20{
+    border-radius: 20px;
+    margin: 10px;
 }

@@ -3,6 +3,7 @@
     font-style: italic;
     margin: 0;
 }
+/*Header*/
 .contenedor-header{
     display: flex;
     justify-content: space-between;
@@ -20,11 +21,13 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .btn-enlace:hover {
     background-color: rgb(222, 94, 92);
 }
+
 main {
 width: 80%;
 margin: 20px auto;

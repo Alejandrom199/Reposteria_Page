@@ -3,6 +3,7 @@
     font-style: italic;
     margin: 0;
 }
+/*Header*/
 .contenedor-header{
     display: flex;
     justify-content: space-between;
@@ -13,17 +14,6 @@
     margin-bottom: 20px;
 }
 
-.contenedor-div{
-    
-    padding: 1em;
-    background-color: white;
-    margin: 1em auto;
-    max-width: 685px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    
-}
-
 .btn-enlace{
     background-color: rgb(255, 121, 118);
     padding: 10px;
@@ -31,12 +21,12 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .btn-enlace:hover {
     background-color: rgb(222, 94, 92);
 }
-
 
 .btn-productos{
     background-color: rgb(255, 255, 255);

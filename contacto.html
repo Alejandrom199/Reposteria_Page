@@ -13,13 +13,15 @@
     <!--Header-->
     <header>
         <div class="contenedor-header">
-            <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
+            <a href="index.html">
+                <img src="img/cupcake.png" alt="cupcake-image" width="50px" height="50px">
+            </a>
             <nav>
                 <a class="btn-enlace" href="index.html">Inicio</a>
                 <a class="btn-enlace" href="nosotros.html">Nosotros</a>
                 <a class="btn-enlace" href="productos.html">Productos</a>
                 <a class="btn-enlace" href="eventos.html">Eventos</a>
-                <a class="btn-enlace" href="">Contacto</a>
+                <a class="btn-enlace" href="contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
@@ -28,6 +30,7 @@
     <main>
         <section id="testimonios">
             <h2>Testimonios de Clientes</h2>
+            <br>
             <table align="center">
                 <tr>
                     <td><img class="tamanio-img" src="img/imagen 1.jpeg" alt="Foto de Cliente 1"></td>
@@ -56,23 +59,24 @@
             </table><br><br>
         </section>
 
-<div class="contenedor-testimonio"><section id="enviar_testimonio" align="center">
-    <form action="submit_testimonio.html" method="post">
-        <fieldset>
-            <h3>Enviar tu Testimonio</h3>
-            <label for="nombre">Nombre:</label><br><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="email">Correo electrónico:</label><br><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="testimonio">Testimonio:</label><br><br>
-            <textarea id="testimonio" name="testimonio" rows="4" cols="50" required></textarea><br><br>
-            <button type="submit">Enviar</button><br>
-        </fieldset>
-    </form>
-</section>
-</div>
+        <div class="contenedor-testimonio">
+            <section align="center">
+            <form>
+                <fieldset style="border: none;">
+                    <h3>Enviar tu Testimonio</h3>
+                    <label for="nombre">Nombre:</label><br><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label><br><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="testimonio">Testimonio:</label><br><br>
+                    <textarea id="testimonio" name="testimonio" rows="4" cols="50" required style="resize: none;"></textarea><br><br>
+                    <button type="submit">Enviar</button><br>
+                </fieldset>
+            </form>
+            </section>
+        </div>
         
-        <hr>
+        <br>
 
         <section id="faqs">
             <h2>Preguntas Frecuentes (FAQs)</h2>

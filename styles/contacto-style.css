@@ -1,8 +1,9 @@
 *{
     color: #379689;
     font-style: italic;
-    margin: 2;
+    margin: 0;
 }
+/*Header*/
 .contenedor-header{
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .btn-enlace:hover {
@@ -44,14 +46,17 @@
     text-transform: capitalize;
 }
 
+td{
+    font-size: 15px;
+}
 /* Selector combinador */
 #faqs h2 {
     color: #ff4500;
 }
 
 .tamanio-img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
 }
 .contenedor-testimonio{
@@ -60,9 +65,12 @@
     align-items: center;
 }
 /* Estilo para el fondo celeste del formulario de enviar testimonio */
-#enviar_testimonio form {
-    background-color: #f8baba;
-    width: 800px;
+.contenedor-testimonio form {
+    box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
+    background-color: #ffefef;
+    width: 600px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 footer{
@@ -81,4 +89,9 @@ footer{
 }
 address > p {
     color: white;
+}
+
+.br-20{
+    border-radius: 20px;
+    margin: 10px;
 }

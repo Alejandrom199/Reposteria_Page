@@ -66,3 +66,13 @@ footer{
 address > p {
     color: white;
 }
+
+.contenedor-div{
+    display: block;
+}
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

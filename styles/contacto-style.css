@@ -63,6 +63,7 @@ td{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 /* Estilo para el fondo celeste del formulario de enviar testimonio */
 .contenedor-testimonio form {
@@ -71,6 +72,10 @@ td{
     width: 600px;
     border-radius: 20px;
     padding: 10px;
+}
+
+iframe{
+    border-radius: 20px;
 }
 
 footer{
@@ -94,4 +99,24 @@ address > p {
 .br-20{
     border-radius: 20px;
     margin: 10px;
+}
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-preguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.contenedor-videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px;
 }

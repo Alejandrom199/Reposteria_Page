@@ -2,6 +2,8 @@
     color: #379689;
     font-style: italic;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 /*Header*/
 .contenedor-header{
@@ -14,6 +16,14 @@
     margin-bottom: 20px;
 }
 
+.contenedor-div{
+    padding: 1em;
+    background-color: white;
+    margin: 1em auto;
+    max-width: 685px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .btn-enlace{
     background-color: rgb(255, 121, 118);
     padding: 10px;
@@ -21,7 +31,6 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
 }
 
 .btn-enlace:hover {
@@ -35,12 +44,17 @@
     color: rgb(10, 10, 10);
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .btn-productos:hover {
     background-color: rgb(243, 197, 193);
     transform: scale(1.1);
-
 }
 
 .texto{
@@ -49,30 +63,29 @@
     margin-bottom: 5%;
 }
 
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 footer{
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
+
 .contenedor-enlaces{
     display: flex;
     justify-content: space-around;
     margin: 10px;
 }
+
 .txt-footer{
     color: white;
 }
+
 address > p {
     color: white;
-}
-
-.contenedor-div{
-    display: block;
-}
-
-.contenedor-tabla{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

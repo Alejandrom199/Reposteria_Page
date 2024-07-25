@@ -1,52 +1,9 @@
+
 *{
     color: #379689;
     font-style: italic;
     margin: 0;
 }
-/*Header*/
-.contenedor-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 230, 234);
-    padding: 10px;
-    box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
-    margin-bottom: 20px;
-}
-
-/*Media query para pantallas pequeñas como celular*/
-@media (max-width: 600px) {
-    .contenedor-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(255, 230, 234);
-        padding: 5px;
-        box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
-        margin-bottom: 20px;
-    }
-}
-
-.btn-enlace{
-    background-color: rgb(255, 121, 118);
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-@media(max-width:600px){
-    .btn-enlace{
-        font-size: 15px;
-    }
-}
-
-.btn-enlace:hover {
-    background-color: rgb(222, 94, 92);
-}
-
 /*Body*/
 .img-principal {
     background-image: url('/img/pasteleria.png');
@@ -263,32 +220,11 @@ p{
 
 }
 
-/*Footer*/
-footer{
-    background-color: black;
+.maquetacion-main{
+    width: 1200px;
+}
+
+main{
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: center;
 }
-
-@media(max-width:600px){
-
-    footer{
-        padding: 20px;
-    }
-}
-
-.contenedor-enlaces{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-
-.txt-footer{
-    color: white;
-}
-
-address > p {
-    color: white;
-}
-

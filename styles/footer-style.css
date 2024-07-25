@@ -1,0 +1,33 @@
+/*Footer*/
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+@media(max-width:600px){
+
+    footer{
+        padding: 20px;
+    }
+}
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-enlaces{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.txt-footer{
+    color: white;
+}
+
+address > p {
+    color: white;
+}
+

@@ -3,30 +3,7 @@
     font-style: italic;
     margin: 0;
 }
-/*Header*/
-.contenedor-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 230, 234);
-    padding: 10px;
-    box-shadow: 0 0 8px 3px rgba(190, 4, 4, 0.3);
-    margin-bottom: 20px;
-}
 
-.btn-enlace{
-    background-color: rgb(255, 121, 118);
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.btn-enlace:hover {
-    background-color: rgb(222, 94, 92);
-}
 /*Body*/
 .main-sobre-nosotros{
     display: flex;
@@ -105,29 +82,11 @@ main img{
     margin: 20px 0;
 }
 
-/*Footer*/
-footer{
-    background-color: black;
+.maquetacion-main{
+    width: 1200px;
+}
+
+main{
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.contenedor-enlaces{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-
-.txt-footer{
-    color: white;
-}
-
-address > p {
-    color: white;
-}
-
-.br-20{
-    border-radius: 20px;
-    margin: 10px;
+    justify-content: center;
 }

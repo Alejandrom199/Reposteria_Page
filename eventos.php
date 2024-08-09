@@ -12,7 +12,7 @@
 
     <body>
         <!--Header-->
-        <div id="header"></div>
+        <?php include("header.html");?>
 
         <main>
             <div class="maquetacion-main">
@@ -46,9 +46,6 @@
         </main>
         
         <!--Footer-->
-        <div id="footer"></div>
-
-        <script src="js/header.js"></script>
-        <script src="js/footer.js"></script>
+        <?php include("footer.html");?>
     </body>
 </html>

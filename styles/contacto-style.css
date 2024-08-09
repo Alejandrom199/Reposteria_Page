@@ -34,6 +34,7 @@ td{
     width: 250px;
     height: 250px;
     border-radius: 20px;
+    animation: desvanecer-imagenes 5s ease;
 }
 .contenedor-testimonio{
     display: flex;
@@ -85,4 +86,12 @@ iframe{
 main{
     display: flex;
     justify-content: center;
+}
+@keyframes desvanecer-imagenes{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }

@@ -11,8 +11,8 @@
     </head>
 
     <body>
-        
-        <div id="header"></div>
+        <!-- Header -->
+        <?php include("header.html");?>
 
         <!--Main-->
         <main>
@@ -27,9 +27,9 @@
                         <br>
                         <table align="center">
                             <tr>
-                                <td><img src="img/Pasteleria1.jpeg" alt="Pasteleria 1"></td>
-                                <td><img src="img/Pasteleria2.jpeg" alt="Pasteleria 2"></td>
-                                <td><img src="img/Pasteleria3.jpeg" alt="Pasteleria 3"></td>
+                                <td><img class="img-nosotros" src="img/Pasteleria1.jpeg" alt="Pasteleria 1"></td>
+                                <td><img class="img-nosotros" src="img/Pasteleria2.jpeg" alt="Pasteleria 2"></td>
+                                <td><img class="img-nosotros" src="img/Pasteleria3.jpeg" alt="Pasteleria 3"></td>
                             </tr>
                         </table>
                     </div>
@@ -92,9 +92,6 @@
         </main>
 
         <<!--Footer-->
-        <div id="footer"></div>
-
-        <script src="js/header.js"></script>
-        <script src="js/footer.js"></script>
+        <?php include("footer.html");?>
     </body>
 </html>

@@ -11,8 +11,8 @@
 </head>
 <body>
 
-    <div id="header"></div>
-
+    <!-- Header -->
+    <?php include("header.html");?>
     <!--Main-->
     <main>
         <div class="maquetacion-main">
@@ -109,9 +109,6 @@
     </main>
 
     <!--Footer-->
-    <div id="footer"></div>
-
-    <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>    
+    <?php include("footer.html");?>  
 </body>
 </html>

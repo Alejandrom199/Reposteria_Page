@@ -90,3 +90,16 @@ main{
     display: flex;
     justify-content: center;
 }
+
+.img-nosotros{
+    animation: desvanecer-imagenes 5s ease;
+}
+
+@keyframes desvanecer-imagenes{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}

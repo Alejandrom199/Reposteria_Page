@@ -1,7 +1,6 @@
 
 *{
     color: #379689;
-    font-style: italic;
     margin: 0;
 }
 /*Body*/
@@ -30,9 +29,11 @@
 }
 
 .contenedor-titulos{
+    position: relative;
     display: inline-block;
     justify-content: space-evenly;
     align-items: center;
+    animation: mov-texto 2s ease;
 }
 
 .titulo-principal{
@@ -227,4 +228,13 @@ p{
 main{
     display: flex;
     justify-content: center;
+}
+
+@keyframes mov-texto{
+    to{
+        left: 0px;
+    }
+    from{
+        left: 100px;
+    }
 }

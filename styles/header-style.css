@@ -23,10 +23,9 @@
 }
 
 .btn-enlace{
-    background-color: rgb(255, 121, 118);
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    color: rgb(93, 6, 6);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -40,4 +39,15 @@
 
 .btn-enlace:hover {
     background-color: rgb(222, 94, 92);
+}
+
+.titulo-header{
+    font-size: 30px;
+    color: rgb(255, 133, 129);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+.contenedor-title{
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
 }
